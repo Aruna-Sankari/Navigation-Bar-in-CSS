@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+        }
+
+        .box {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 10.5), rgba(154, 0, 0, 0.5)), url('https://img.freepik.com/premium-photo/coffee-background-with-coffee-mug-delicious_935138-60.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 5%;
+            padding-right: 5%;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 30px;
+            color: white;
+        }
+
+        .logo span {
+            color: orangered;
+            font-family: rockwell;
+            font-size: 33px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: orangered;
+            transition: 0.5s;
+        }
+
+        nav button {
+            padding: 12px 30px;
+            border-radius: 30px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav button:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .banner-text {
+            color: white;
+            position: relative;
+            top: 43%;
+            transform: translateY(-50%);
+            text-align: center;
+            transition: 0.5s;
+        }
+        .banner-text h1{
+            font-size:55px;
+        }
+        .banner-text span{
+            color:orangered;
+            font-family:rockwell;
+        }
+        .banner-text p{
+            font-size:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav>
+            <h2 class="logo">Coffee <span>Shop</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button>Sign In</button>
+        </nav>
+        <div class="banner-text">
+            <h1>Outstanding <span>Coffee Shop</span></h1>
+            <p>The Perfect Blend of Freshness</p>
+        </div>
+    </div>
+</body>
+
+</html>
